@@ -67,3 +67,28 @@ a{
 .name {
     font-weight: 900;
 }
+
+svg {
+    background-color: aliceblue;
+    border-radius: 5%;
+    width: 3.5rem;
+    padding: 5px;
+}
+
+
+.contact {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    font-size: 2rem;
+}
+
+.git {
+    font-size: 5.5rem;
+    font-weight: bold;
+}
