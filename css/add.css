@@ -59,3 +59,8 @@ nav ul {
 a{
     color: white;
 }
+
+/* highlight current page by making it bolder */
+.current {
+    font-weight: 900;
+}

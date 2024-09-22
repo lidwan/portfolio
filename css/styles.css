@@ -76,6 +76,14 @@ a{
     font-size: 2.5rem;
 }
 
+
+/* giving links color */
 .link {
     color:rgb(114, 160, 197)
+}
+
+
+/* highlight current page by making it bolder */
+.current {
+    font-weight: 900;
 }
