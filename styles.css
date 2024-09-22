@@ -39,7 +39,15 @@ a:active {
 body {
     background-color: black;
     color: white;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -55,3 +63,15 @@ nav ul li a{
     color: white;
 }
 
+.cont {
+    width: 60vw;
+    margin: 0 0 3vh 3vh;
+}
+
+.hello {
+    font-size: 12rem;
+}
+
+.details {
+    font-size: 2.5rem;
+}
