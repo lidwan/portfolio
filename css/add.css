@@ -92,3 +92,7 @@ svg {
     font-size: 5.5rem;
     font-weight: bold;
 }
+/* giving links color */
+.link {
+    color:rgb(114, 160, 197)
+}
