@@ -59,7 +59,7 @@ nav ul {
     display: flex;
     gap: 2vw;
 }
-nav ul li a{
+a{
     color: white;
 }
 
@@ -74,4 +74,8 @@ nav ul li a{
 
 .details {
     font-size: 2.5rem;
+}
+
+.link {
+    color:rgb(114, 160, 197)
 }
