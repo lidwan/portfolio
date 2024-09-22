@@ -46,10 +46,14 @@ body {
     color: white;
     font-size: 18px;
 
+
+
+.indexCont {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+}
 }
 
 
@@ -103,4 +107,51 @@ a:hover {
 
 nav a:hover {
     color: var(--color-links);
+}
+
+.am {
+    font-size: 3.5rem;
+}
+
+.am-p{
+    font-size: 2rem;
+}
+
+.about {
+    width: 100vw; 
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .cont {
+     display: flex;
+     flex-direction: column;
+ }
+
+ svg {
+    background-color: aliceblue;
+    border-radius: 5%;
+    width: 3.5rem;
+    padding: 5px;
+}
+
+
+.contact {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.git {
+    font-size: 5.5rem;
+    font-weight: bold;
 }
