@@ -34,19 +34,30 @@ a:active {
     text-decoration: none; 
 }
 
+/* theme */
+:root.light {
+    --color-bg: white;
+    --color-text: black;
+}
+
+:root.dark {
+    --color-bg: black;
+    --color-text: white;
+}
+
 /* styles */
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-size: 18px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-
 }
+
 
 nav {
     display: flex;
@@ -60,7 +71,7 @@ nav ul {
     gap: 2vw;
 }
 nav ul li a{
-    color: white;
+    color: var(--color-text);
 }
 
 .cont {
