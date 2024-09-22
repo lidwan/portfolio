@@ -36,6 +36,11 @@ a:active {
 
 /* styles */
 
+
+:root {
+    --color-links:rgb(114, 160, 197);
+    --color-links-darker:rgb(58, 80, 97);
+}
 body {
     background-color: black;
     color: white;
@@ -79,7 +84,7 @@ a{
 
 /* giving links color */
 .link {
-    color:rgb(114, 160, 197)
+    color: var(--color-links);
 }
 
 
@@ -90,4 +95,12 @@ a{
 
 .name {
     font-weight: 900;
+}
+
+a:hover {
+    color: var(--color-links-darker)
+}
+
+nav a:hover {
+    color: var(--color-links);
 }
