@@ -45,8 +45,7 @@ body {
     background-color: black;
     color: white;
     font-size: 18px;
-
-
+}
 
 .indexCont {
     display: flex;
@@ -54,9 +53,6 @@ body {
     justify-content: space-between;
     height: 100vh;
 }
-}
-
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,8 +62,13 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2vw;
+    gap: 2.5vw;
 }
+
+nav ul li a {
+    font-size: 1.25rem;
+}
+
 a{
     color: white;
 }
@@ -78,11 +79,11 @@ a{
 }
 
 .hello {
-    font-size: 12rem;
+    font-size: 15rem;
 }
 
 .details {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 
 
@@ -154,4 +155,61 @@ nav a:hover {
 .git {
     font-size: 5.5rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    .hello {
+        font-size: 13rem;
+    }
+    
+    .details {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .hello {
+        font-size: 7rem;
+    }
+    
+    .details {
+        font-size: 1.4rem;
+    }
+    .indexCont {
+        justify-content: flex-start;
+    }
+    .content {
+        height: 80vh;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap:5vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .am {
+        font-size: 2.5rem;
+    }
+    
+    .am-p{
+        font-size: 1.4rem;
+    }
+    .cont {
+        margin: 3.5vw
+    }
+    .contact {
+        font-size: 1.5rem;
+    }
+    .git {
+        font-size: 4rem;
+
+    }
+    svg {
+
+        width: 3rem;
+
+    }
 }
