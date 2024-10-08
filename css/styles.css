@@ -167,12 +167,19 @@ nav a:hover {
     gap: 5vw;
 }
 .card {
-    background-color: var(--color-links-darker)
-
+    background-color: var(--color-links-darker);
+    text-align: center;
 }
 
 .card-body {
     color: white;
+    
+}
+
+.btnCont {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
 }
 .card-link:hover {
     color: rgb(148, 189, 221);;
