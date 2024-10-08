@@ -79,11 +79,11 @@ a{
 }
 
 .hello {
-    font-size: 15rem;
+    font-size: 14.5rem;
 }
 
 .details {
-    font-size: 3.2rem;
+    font-size: 3.1rem;
 }
 
 
@@ -155,8 +155,28 @@ nav a:hover {
 .git {
     font-size: 5.5rem;
     font-weight: bold;
+}   
+
+.cardsCont {
+    height: 90vh;
+    margin: 0px 5vw 0px 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5vw;
+}
+.card {
+    background-color: var(--color-links-darker)
+
 }
 
+.card-body {
+    color: white;
+}
+.card-link:hover {
+    color: rgb(148, 189, 221);;
+}
 @media screen and (max-width: 1200px) {
     .hello {
         font-size: 13rem;
