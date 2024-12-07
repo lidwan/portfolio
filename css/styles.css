@@ -79,7 +79,7 @@ a{
 }
 
 .hello {
-    font-size: 14.5rem;
+    font-size: 11rem;
 }
 
 .details {
@@ -197,7 +197,7 @@ nav a:hover {
 }
 @media screen and (max-width: 1200px) {
     .hello {
-        font-size: 13rem;
+        font-size: 9rem;
     }
     
     .details {
