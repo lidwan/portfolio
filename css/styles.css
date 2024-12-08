@@ -258,3 +258,8 @@ nav a:hover {
         margin-top: 5vh;
     }
 }
+
+.credit {
+    font-size: medium;
+    margin-top: 1rem;
+}
