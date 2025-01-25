@@ -164,18 +164,18 @@ nav a:hover {
     width: 100vw;
 }
 .cardsCont {
-    height: 90vh;
+    height: 100%;
     width: 1500px;
     margin: 0px 5vw 0px 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    gap: 5vw;
+    gap: 3vw;
 
     flex-wrap: wrap;
-    row-gap: 10vw;
-    
+    row-gap: 5vw;
+    margin-bottom: 5vh;
 }
 .card {
     background-color: var(--color-links-darker);
