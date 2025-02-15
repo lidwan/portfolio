@@ -6,7 +6,8 @@ const Projects = () => {
 
     return (
         <div className=" centerContainer">
-            <h1 className="projectsH1" id="projects">Projects</h1>
+            <div id="projects">&nbsp;</div>
+            <h1 className="projectsH1">Projects</h1>
             {projects.map((project => (
                 <Project key={project.title}
                          picturePath={project.picturePath}

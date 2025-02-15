@@ -5,7 +5,8 @@ const About = () => {
 
     return (
         <div className="wholePageSection centerContainer">
-            <h1 id="About">About Loay Idwan</h1>
+            <div id="about">&nbsp;</div>
+            <h1 className="AboutLI">About Loay Idwan</h1>
             <h4>
                 I’m a cat-loving, Linux enthusiast and hobby photographer, <br/>
                 currently juggling life as a student in Jordan. <br/>

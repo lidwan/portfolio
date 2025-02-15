@@ -1,4 +1,8 @@
-#About {
+.AboutLI {
     font-weight: bold;
+}
+
+#about {
+    margin-bottom: 2vh;
 }
 
