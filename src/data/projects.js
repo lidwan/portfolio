@@ -18,9 +18,9 @@ const projects = [
         ghLink:"https://github.com/lidwan/dotfiles"
     },
     {
-        picturePath:"/images/TBAS.jpg",
+        picturePath:"/images/blog.png",
         title:"My Blog",
-        description:"A Blog where I share thoughts on tech, coding, and open source. Made with React, author writes the post in a text editor and uploads .md file, and updates the posts index, the website does the rest!",
+        description:"A Blog where I share thoughts on tech, coding, and open source. Using React Markdown, adding new posts is very easy.",
         ghLink:"https://github.com/lidwan/blog"
     }
 ];
