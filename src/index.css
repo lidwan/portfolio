@@ -98,3 +98,17 @@ a:hover {
 .wholePageSection {
   height: 90vh;
 }
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4vh;
+  padding: 0 7vw;
+}
+
+.centerContainer h4 {
+  line-height: 4vh;
+}
