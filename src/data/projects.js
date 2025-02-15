@@ -7,21 +7,21 @@ const projects = [
         livePreviewLink:""
     },
     {
-        picturePath:"",
+        picturePath:"/images/mse.png",
         title:"Mini search engine",
         description:"Scrapes a website then lets the user query and returns the top 10 results from website.",
         ghLink:"https://github.com/lidwan/Mini-Search-Engine",
         livePreviewLink:""
     },
     {
-        picturePath:"",
+        picturePath:"/images/arch.png",
         title:"Arch linux & hyperland config.",
         description:"Personal config. files with a bash script to apply config and install a list of system packages and flatpaks.",
         ghLink:"https://github.com/lidwan/dotfiles",
         livePreviewLink:""
     },
     {
-        picturePath:"",
+        picturePath:"/images/TBAS.jpg",
         title:"My Blog",
         description:"A Blog where I share thoughts on tech, coding, and open source. Made with React, author writes the post in a text editor and uploads .md file, and updates the posts index, the website does the rest!",
         ghLink:"https://github.com/lidwan/blog",
