@@ -1,0 +1,42 @@
+.greetingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 27px;
+}
+
+.greetingContainer h1{
+    font-size: 12vw;
+    font-weight: bold;
+}
+
+.greetingContainer h3{
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .greetingContainer h1{
+        font-size: 15vw;
+    }
+
+    .greetingContainer h3{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .greetingContainer {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 0 12vw;
+    }
+    .greetingContainer h1{
+        font-size: 20vw;
+    }
+
+    .greetingContainer h3{
+        font-size: 5vw;
+    }
+}
