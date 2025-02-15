@@ -23,10 +23,10 @@ const NavBar = () => {
                                href="/public">Blog</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://loayidwan.com/pages/projects.html">Projects</a>
+                            <a className="nav-link" href="#projects">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://loayidwan.com/pages/contact.html">Contact</a>
+                            <a className="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
