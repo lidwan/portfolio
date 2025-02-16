@@ -5,7 +5,7 @@ import './project.css'
 const Project = ({picturePath, title, description, ghLink}) => {
     return (
         <div className="card mb-3 projectCard text-bg-dark">
-            <div className="row g-0 innerCard">
+            <div className="row g-0">
                 <div className="col-md-4">
                     <img src={picturePath} className="img-fluid rounded-start" alt="Project picture"/>
                 </div>
