@@ -1,9 +1,13 @@
 .projectCard {
     max-width: 1000px;
-    box-shadow: white 5px 5px 13px, inset #5c5c5c 0 0 20px;;
-
+    box-shadow: #7f7f7f 5px 5px 10px 2px, inset #3c3a3a -5px -4px 15px 3px;
+    transition: all 0.3s;
 }
 
+.projectCard:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: #a4a4a4 10px 10px 15px 2px;
+}
 .card-title {
     font-weight: bold;
     padding-bottom: 1vh;
