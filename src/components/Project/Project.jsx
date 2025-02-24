@@ -12,7 +12,7 @@ const Project = ({picturePath, title, description, ghLink, liveLink}) => {
                 <div className="col-md-8 flex-column justify-content-center align-content-center">
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
-                        <p className="card-text">{description}</p>
+                        <div className='desContainer'><p className="card-text">{description}</p></div>
                         <div className='buttonContainer'>
                             <a href={ghLink}><button type="button" className="btn btn-secondary">Github Link</button> </a>
                             {liveLink && <a href={liveLink}><button type="button" className="btn btn-secondary">Live Preview</button> </a>}
