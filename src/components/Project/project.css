@@ -14,14 +14,25 @@
     margin-bottom: 0;
 }
 
-
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+}
 
 .card-text {
     padding-bottom: 1vh;
     margin-bottom: 0;
+    max-width: 80%;
+    justify-self: center;
 }
+
 @media screen and (max-width: 620px) {
     .projectCard {
         margin: 0 7vw;
+        font-size: medium;
+    }
+    .buttonContainer {
+        flex-direction: column;
     }
 }
