@@ -70,23 +70,63 @@
         flex-direction: column;
       }
 
-      nav {
-        margin: 15px;
-        font-size: 1.4rem;
+      .siteNav {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        margin: 1rem auto 0;
+        width: min(1120px, calc(100% - 2rem));
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.88);
+        backdrop-filter: blur(12px);
       }
 
-      nav ul {
-        gap: 2.5vw;
-      }
-
-      nav a:hover {
-        text-decoration: none;
+      .navInner {
+        padding: 0.25rem 0.85rem;
       }
 
       #title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #ffffff;
+        color: #f7f7f7;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .navLinksList {
+        gap: 0.5rem;
+      }
+
+      .siteNavLink,
+      .navbar-dark .navbar-nav .nav-link.siteNavLink {
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        padding: 0.45rem 0.9rem;
+        transition: color 0.2s ease, background-color 0.2s ease;
+      }
+
+      .siteNavLink:hover,
+      .navbar-dark .navbar-nav .nav-link.siteNavLink:hover {
+        color: #f7f7f7;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .navbar-dark .navbar-nav .nav-link.siteNavLink.active {
+        color: #f7f7f7;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.2);
+        border-radius: 0.8rem;
+      }
+
+      .navbar-toggler:focus {
+        box-shadow: none;
       }
 
       .card-wrap {
@@ -183,23 +223,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        padding: 16px;
+        color: var(--muted);
+        padding: 1.2rem 1rem 1.8rem;
         margin: 0;
+        font-size: 0.9rem;
+        letter-spacing: 0.03em;
       }
 
       @media screen and (max-width: 1200px) {
         .footer {
-          padding: 3vw;
+          padding: 1.1rem 1rem 1.6rem;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .siteNav {
+          border-radius: 1.2rem;
+        }
+
+        .navLinksList {
+          gap: 0.2rem;
+          padding-top: 0.5rem;
+        }
+
+        .siteNavLink,
+        .navbar-dark .navbar-nav .nav-link.siteNavLink {
+          display: inline-flex;
+          width: fit-content;
         }
       }
 
       @media (max-width: 560px) {
-        nav {
-          margin: 10px;
-          font-size: 1.2rem;
-        }
-
         .card {
           border-radius: 16px;
           padding: 20px;
@@ -224,7 +278,7 @@
 
       @media screen and (max-width: 620px) {
         .footer {
-          padding: 5vw;
+          padding: 1rem 1rem 1.4rem;
         }
       }
 
@@ -237,8 +291,8 @@
   </head>
   <body>
     <div class="page">
-      <nav class="navbar navbar-expand-lg bg-black navbar-dark">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark siteNav">
+        <div class="container-fluid navInner">
           <a class="navbar-brand" id="title" href="https://loayidwan.com/">Loay Idwan</a>
           <button
             class="navbar-toggler"
@@ -252,21 +306,21 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto navLinksList">
               <li class="nav-item">
-                <a class="nav-link" href="https://loayidwan.com/">Home</a>
+                <a class="nav-link siteNavLink" href="https://loayidwan.com/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://loayidwan.com/#about">About</a>
+                <a class="nav-link siteNavLink" href="https://loayidwan.com/#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="https://blog.loayidwan.com/">Blog</a>
+                <a class="nav-link siteNavLink" aria-current="page" href="https://blog.loayidwan.com/">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://loayidwan.com/#projects">Projects</a>
+                <a class="nav-link siteNavLink" href="https://loayidwan.com/#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://loayidwan.com/#contact">Contact</a>
+                <a class="nav-link siteNavLink" href="https://loayidwan.com/#contact">Contact</a>
               </li>
             </ul>
           </div>
