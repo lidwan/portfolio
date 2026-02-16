@@ -1,20 +1,75 @@
-nav {
-    margin: 15px;
+.siteNav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    margin: 1rem auto 0;
+    width: min(1120px, calc(100% - 2rem));
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(12px);
 }
 
-nav ul {
-    gap: 2.5vw;
-}
-
-nav {
-    font-size: 1.4rem;
-}
-
-nav a:hover{
-    text-decoration: none;
+.navInner {
+    padding: 0.25rem 0.85rem;
 }
 
 #title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.navLinksList {
+    gap: 0.5rem;
+}
+
+.siteNavLink,
+.navbar-dark .navbar-nav .nav-link.siteNavLink {
+    border-radius: 999px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.45rem 0.9rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.siteNavLink:hover,
+.navbar-dark .navbar-nav .nav-link.siteNavLink:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-dark .navbar-nav .nav-link.siteNavLink.active {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.8rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 992px) {
+    .siteNav {
+        border-radius: 1.2rem;
+    }
+
+    .navLinksList {
+        gap: 0.2rem;
+        padding-top: 0.5rem;
+    }
+
+    .siteNavLink,
+    .navbar-dark .navbar-nav .nav-link.siteNavLink {
+        display: inline-flex;
+        width: fit-content;
+    }
 }

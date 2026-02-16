@@ -1,42 +1,50 @@
 .greetingContainer {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding: 0 27px;
+    justify-content: center;
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+    gap: 1.4rem;
 }
 
 .greetingContainer h1{
-    font-size: 12vw;
+    font-size: clamp(3.2rem, 12vw, 9.5rem);
     font-weight: bold;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-align: left;
 }
 
-.greetingContainer h3{
-    font-size: 2vw;
+.greetingSubtitle {
+    text-align: left;
+    max-width: 760px;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    line-height: 1.9;
 }
 
 @media screen and (max-width: 1200px) {
     .greetingContainer h1{
-        font-size: 15vw;
-    }
-
-    .greetingContainer h3{
-        font-size: 3vw;
+        font-size: clamp(3rem, 13vw, 7.5rem);
     }
 }
 
 @media screen and (max-width: 620px) {
     .greetingContainer {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        padding: 0 12vw;
-    }
-    .greetingContainer h1{
-        font-size: 20vw;
+        gap: 1.3rem;
+        padding: 4.2rem 1.2rem 2.4rem;
     }
 
-    .greetingContainer h3{
-        font-size: 5vw;
+    .greetingContainer h1{
+        font-size: clamp(3rem, 20vw, 5.6rem);
+        text-align: center;
+    }
+
+    .greetingSubtitle {
+        font-size: clamp(1rem, 4.8vw, 1.2rem);
+        text-align: center;
     }
 }
