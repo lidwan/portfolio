@@ -295,7 +295,7 @@
         </main>
       </div>
 
-      <p class="footer">&copy;  <span id="year"></span>  Loay Idwan.</p>
+      <p class="footer"><span id="footer-text"></span></p>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -303,7 +303,8 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("footer-text").textContent =
+        `\u00A9${new Date().getFullYear()} Loay Idwan.`;
     </script>
   </body>
 </html>
