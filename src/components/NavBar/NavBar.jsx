@@ -13,7 +13,7 @@ const NavBar = () => {
                     <ul className="navbar-nav ms-auto navLinksList">
 
                         <li className="nav-item">
-                            <a className="nav-link siteNavLink active" href="#">Home</a>
+                            <a className="nav-link siteNavLink" href="#">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link siteNavLink" href="#about">About</a>
