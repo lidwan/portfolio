@@ -5,7 +5,7 @@ import './projects.css'
 const Projects = () => {
 
     return (
-        <div className=" centerContainer">
+        <section className="centerContainer projectsContainer">
             <div id="projects">&nbsp;</div>
             <h1 className="projectsH1">Projects</h1>
             {projects.map((project => (
@@ -17,7 +17,7 @@ const Projects = () => {
                          liveLink={project.liveLink}
                 />
             )))}
-        </div>
+        </section>
     )
 }
 

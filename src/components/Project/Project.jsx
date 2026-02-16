@@ -4,23 +4,23 @@ import './project.css'
 
 const Project = ({picturePath, title, description, ghLink, liveLink}) => {
     return (
-        <div className="card mb-3 projectCard text-bg-dark p-1">
+        <article className="card mb-3 projectCard text-bg-dark p-1">
             <div className="row g-0">
                 <div className="col-md-4">
-                    <img src={picturePath} className="img-fluid rounded-start" alt="Project picture"/>
+                    <img src={picturePath} className="img-fluid rounded-start projectImage" alt="Project picture"/>
                 </div>
                 <div className="col-md-8 flex-column justify-content-center align-content-center">
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <div className='desContainer'><p className="card-text">{description}</p></div>
                         <div className='buttonContainer'>
-                            <a href={ghLink}><button type="button" className="btn btn-secondary">Github Link</button> </a>
-                            {liveLink && <a href={liveLink}><button type="button" className="btn btn-secondary">Live Preview</button> </a>}
+                            <a href={ghLink}><button type="button" className="btn btn-secondary projectButton">Github Link</button> </a>
+                            {liveLink && <a href={liveLink}><button type="button" className="btn btn-secondary projectButton">Live Preview</button> </a>}
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
 

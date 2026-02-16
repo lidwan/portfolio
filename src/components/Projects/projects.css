@@ -1,8 +1,14 @@
+.projectsContainer {
+    justify-content: flex-start;
+    padding-top: 4rem;
+}
+
 .projectsH1 {
     font-weight: bold;
-    margin-bottom: 3vh;
+    margin-bottom: 1rem;
 }
 
 #projects {
-    margin-bottom: 2vh;
+    margin-bottom: 1.5rem;
+    scroll-margin-top: 8rem;
 }

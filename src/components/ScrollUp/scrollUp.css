@@ -2,5 +2,23 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    margin-bottom: 3vh;
+    margin-bottom: 1rem;
+}
+
+.scrollTopButton {
+    border: 1px solid #2f2f2f;
+    border-radius: 999px;
+    color: var(--text-primary);
+    background: #141414;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    padding: 0.45rem 1rem;
+}
+
+.scrollTopButton:hover,
+.scrollTopButton:focus,
+.scrollTopButton:active {
+    color: #000000 !important;
+    background: #f1f1f1 !important;
+    border-color: #f1f1f1 !important;
 }
