@@ -10,21 +10,15 @@ function App() {
 
   return (
     <>
-        <NavBar/>
-        <div>
-            <Greeting/>
-        </div>
-        <div>
-            <About />
-        </div>
-        <div>
-            <Projects />
-        </div>
-        <div>
-            <Contact />
-        </div>
-        <ScrollUp />
-        <Footer/>
+      <NavBar />
+      <main className="mainPage">
+        <Greeting />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <ScrollUp />
+      <Footer />
     </>
   )
 }
