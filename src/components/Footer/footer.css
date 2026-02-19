@@ -3,20 +3,17 @@
     justify-content: center;
     align-items: center;
     color: var(--text-muted);
-    padding: 1.2rem 1rem 1.8rem;
+    padding: 2rem 1rem 3rem;
     margin: 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.03em;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: transparent;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .footer {
-        padding: 1.1rem 1rem 1.6rem;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .footer {
-        padding: 1rem 1rem 1.4rem;
+        padding: 1.5rem 1rem 2rem;
     }
 }

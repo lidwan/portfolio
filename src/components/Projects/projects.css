@@ -1,14 +1,29 @@
 .projectsContainer {
-    justify-content: flex-start;
-    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    gap: 3rem;
 }
 
 .projectsH1 {
-    font-weight: bold;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
     margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #a1a1a1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
 }
 
 #projects {
-    margin-bottom: 1.5rem;
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 10rem;
+    width: 100%;
+}
+
+.projectsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
 }

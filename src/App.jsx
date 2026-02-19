@@ -1,26 +1,16 @@
-import NavBar from "./components/NavBar/NavBar.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import Greeting from "./components/Greeting/Greeting.jsx";
-import About from "./components/About/About.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-import ScrollUp from "./components/ScrollUp/ScrollUp.jsx";
-import Projects from "./components/Projects/Projects.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home.jsx";
+import Card from "./pages/Card/Card.jsx";
 
 function App() {
-
   return (
-    <>
-      <NavBar />
-      <main className="mainPage">
-        <Greeting />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-      <ScrollUp />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/card" element={<Card />} />
+      </Routes>
+    </Router>
   )
 }
 
-export default App
+export default App;

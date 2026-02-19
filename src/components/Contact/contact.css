@@ -1,63 +1,93 @@
 .getInTouch {
-    font-weight: bold;
-    margin-bottom: 0.3rem;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #a1a1a1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.03em;
 }
 
 #contact {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 10rem;
 }
 
 .contactContainer {
-    min-height: 75vh;
+    min-height: 80vh;
+    padding-top: 4rem;
+    gap: 1.5rem;
 }
 
 .contactEmail {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: 500;
     color: var(--text-muted);
 }
 
+.contactEmail a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: rgba(161, 196, 245, 0.3);
+    text-underline-offset: 6px;
+    transition: all 0.3s ease;
+}
+
+.contactEmail a:hover {
+    color: var(--link-hover);
+    text-decoration-color: var(--link-hover);
+}
+
+.iconsConstainer {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
 .icon {
-    width: 64px;
-    height: 64px;
-    border: 1px solid var(--line);
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: var(--text-primary);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: var(--surface);
-    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .icon svg {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.4s ease;
 }
 
 .icon:hover {
     color: #ffffff;
-    border-color: #616161;
-    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.iconsConstainer {
-    display: flex;
-    gap: 1rem;
+.icon:hover svg {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 620px) {
     .iconsConstainer {
-        gap: 0.8rem;
+        gap: 1rem;
     }
 
     .icon {
-        width: 58px;
-        height: 58px;
+        width: 60px;
+        height: 60px;
     }
 
     .icon svg {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
     }
-
 }
