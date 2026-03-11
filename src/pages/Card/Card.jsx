@@ -104,6 +104,7 @@ const Card = () => {
                         </div>
                     </div>
                 </section>
+                <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e3a302f1854a45f28565b637ae177098"}'></script>
             </main>
             <Footer />
         </>
