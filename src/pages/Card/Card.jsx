@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import NavBar from "../../components/NavBar/NavBar.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import useOutboundLinkTracking from "../../hooks/useOutboundLinkTracking.js";
 import './card.css';
 const Card = () => {
+    useOutboundLinkTracking();
     useEffect(() => {
         const metaTags = [
             { name: "robots", content: "noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" },

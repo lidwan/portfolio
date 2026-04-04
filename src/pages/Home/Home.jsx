@@ -5,8 +5,10 @@ import About from "../../components/About/About.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
 import ScrollUp from "../../components/ScrollUp/ScrollUp.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
+import useOutboundLinkTracking from "../../hooks/useOutboundLinkTracking.js";
 
 const Home = () => {
+    useOutboundLinkTracking();
     return (
         <>
             <NavBar />
