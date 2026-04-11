@@ -10,7 +10,7 @@ const projects = [
         title:"My Blog",
         description:"A Blog where I share thoughts on tech, coding, and open source. Using React Markdown, adding new posts is very easy.",
         ghLink:"https://github.com/lidwan/blog",
-        liveLink:"https://blog.loayidwan.com"
+        liveLink:"https://lsblk.dev"
     },
     {
         picturePath:"/images/arch.png",

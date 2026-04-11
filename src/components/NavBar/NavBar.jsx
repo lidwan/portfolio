@@ -20,7 +20,7 @@ const NavBar = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link siteNavLink" aria-current="page"
-                                href="https://blog.loayidwan.com/">Blog</a>
+                                href="https://lsblk.dev/">Blog</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link siteNavLink" href="/#projects">Projects</a>
