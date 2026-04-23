@@ -16,7 +16,7 @@ const NavBar = () => {
     }, []);
 
     return (
-        <nav className={`navbar navbar-expand-lg navbar-dark siteNav${isScrolled ? ' siteNav--scrolled' : ''}`}>
+        <nav id="top" className={`navbar navbar-expand-lg navbar-dark siteNav${isScrolled ? ' siteNav--scrolled' : ''}`}>
             <div className="container-fluid navInner">
                 <a className="navbar-brand" id="title" href="https://loayidwan.com/">Loay Idwan</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

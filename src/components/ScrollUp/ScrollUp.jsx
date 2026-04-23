@@ -15,9 +15,29 @@ const ScrollUp = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const scrollToTop = (event) => {
+        event.preventDefault();
+
+        try {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } catch {
+            window.scrollTo(0, 0);
+        }
+    };
+
+    if (!isVisible) {
+        return null;
+    }
+
     return (
-        <div className={`scrollUpButtonContainer${isVisible ? ' isVisible' : ''}`}>
-            <a href="#"><button type="button" className="btn btn-dark scrollTopButton">Scroll back up?</button></a>
+        <div className="scrollUpButtonContainer isVisible">
+            <a
+                href="#top"
+                className="scrollTopButton"
+                onClick={scrollToTop}
+            >
+                Scroll back up?
+            </a>
         </div>
     )
 }
