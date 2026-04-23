@@ -8,6 +8,7 @@
     padding: 10rem 2rem 6rem;
     gap: 1.5rem;
     z-index: 10;
+    overflow: visible;
 }
 
 /* Background animated orbs for Hero section */
@@ -16,9 +17,11 @@
     content: '';
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
     z-index: -1;
-    animation: float 20s infinite ease-in-out;
+    opacity: 0.9;
+    pointer-events: none;
+    will-change: transform;
+    animation: float 24s infinite ease-in-out;
 }
 
 .greetingContainer::before {
@@ -26,7 +29,7 @@
     left: -10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(94, 106, 210, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(94, 106, 210, 0.22) 0%, rgba(94, 106, 210, 0.12) 38%, rgba(94, 106, 210, 0.04) 58%, rgba(94, 106, 210, 0) 76%);
     animation-delay: -5s;
 }
 
@@ -35,18 +38,18 @@
     right: -10%;
     width: 350px;
     height: 350px;
-    background: radial-gradient(circle, rgba(131, 56, 236, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(131, 56, 236, 0.18) 0%, rgba(131, 56, 236, 0.1) 36%, rgba(131, 56, 236, 0.035) 58%, rgba(131, 56, 236, 0) 76%);
 }
 
 @keyframes float {
 
     0%,
     100% {
-        transform: translateY(0) scale(1);
+        transform: translate3d(0, 0, 0) scale(1);
     }
 
     50% {
-        transform: translateY(-30px) scale(1.05);
+        transform: translate3d(0, -18px, 0) scale(1.03);
     }
 }
 

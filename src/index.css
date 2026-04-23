@@ -7,11 +7,16 @@
   --line: #1c1c1e;
   --surface: rgba(20, 20, 22, 0.7);
   --surface-hover: rgba(40, 40, 45, 0.8);
+  --surface-elevated: rgba(20, 20, 25, 0.78);
+  --surface-strong: rgba(14, 14, 18, 0.9);
   --link: #a1c4f5;
   --link-hover: #ffffff;
   --radius: 20px;
   --accent: #5e6ad2;
   --accent-glow: rgba(94, 106, 210, 0.4);
+  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-duration: 0.72s;
+  --motion-distance: 2rem;
 }
 
 *,
@@ -36,8 +41,9 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: var(--page-bg);
   background-image:
-    radial-gradient(circle at 15% 50%, rgba(94, 106, 210, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(131, 56, 236, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 15% 50%, rgba(94, 106, 210, 0.05) 0%, rgba(94, 106, 210, 0.03) 28%, rgba(94, 106, 210, 0) 52%),
+    radial-gradient(circle at 85% 30%, rgba(131, 56, 236, 0.05) 0%, rgba(131, 56, 236, 0.03) 28%, rgba(131, 56, 236, 0) 52%);
+  background-repeat: no-repeat;
   color: var(--text-primary);
   font-size: 18px;
   line-height: 1.6;
@@ -60,7 +66,7 @@ a:visited,
 a:active {
   color: var(--link);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -129,16 +135,48 @@ ul {
 
 /* Glassmorphism Utilities */
 .glass-panel {
-  background: var(--surface);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--surface-elevated);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+}
+
+.revealBlock {
+  opacity: 0;
+  transform: translate3d(0, var(--motion-distance), 0) scale(0.985);
+  transition:
+    opacity var(--motion-duration) var(--motion-ease) var(--reveal-delay, 0ms),
+    transform var(--motion-duration) var(--motion-ease) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+}
+
+.revealBlock--visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 @media screen and (max-width: 768px) {
   .centerContainer {
     padding: 6rem 1.5rem;
     gap: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .revealBlock {
+    opacity: 1;
+    transform: none;
   }
 }

@@ -1,5 +1,6 @@
 import projects from "../../data/projects.js";
 import Project from "../Project/Project.jsx";
+import Reveal from "../Reveal/Reveal.jsx";
 import './projects.css'
 
 const Projects = () => {
@@ -7,16 +8,26 @@ const Projects = () => {
     return (
         <section className="centerContainer projectsContainer">
             <div id="projects">&nbsp;</div>
-            <h1 className="projectsH1">Projects</h1>
-            {projects.map((project => (
-                <Project key={project.title}
-                         picturePath={project.picturePath}
-                         title={project.title}
-                         description={project.description}
-                         ghLink={project.ghLink}
-                         liveLink={project.liveLink}
-                />
-            )))}
+            <Reveal>
+                <h1 className="projectsH1">Projects</h1>
+            </Reveal>
+            {projects.map((project, index) => (
+                <Reveal
+                    key={project.title}
+                    className="projectReveal"
+                    delay={index * 120}
+                    threshold={0.12}
+                    rootMargin="0px 0px -8% 0px"
+                >
+                    <Project
+                        picturePath={project.picturePath}
+                        title={project.title}
+                        description={project.description}
+                        ghLink={project.ghLink}
+                        liveLink={project.liveLink}
+                    />
+                </Reveal>
+            ))}
         </section>
     )
 }
