@@ -7,11 +7,10 @@
     width: min(1000px, calc(100% - 2rem));
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 100px;
-    background: rgba(10, 10, 12, 0.65);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background: rgba(10, 10, 12, 0.88);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.08);
     transition: transform 0.35s ease, background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    will-change: transform;
 }
 
 .siteNav::before {
@@ -27,9 +26,9 @@
 
 .siteNav--scrolled {
     transform: translateX(-50%) translateY(-0.35rem);
-    background: rgba(10, 10, 12, 0.8);
+    background: rgba(10, 10, 12, 0.96);
     border-color: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .siteNav--scrolled::before {
@@ -56,11 +55,12 @@
     background: linear-gradient(135deg, #fff 0%, #a1c4f5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: filter 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 #title:hover {
-    filter: drop-shadow(0 0 12px rgba(161, 196, 245, 0.25));
+    opacity: 0.92;
+    transform: translateY(-1px);
 }
 
 .navLinksList {
