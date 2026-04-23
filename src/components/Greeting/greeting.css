@@ -121,13 +121,39 @@
 
 @media screen and (max-width: 768px) {
     .greetingContainer {
-        padding: 8rem 1.5rem 4rem;
+        padding: 7.5rem 1.5rem 4rem;
+        gap: 1.25rem;
         text-align: left;
+    }
+
+    .greetingContainer h1 {
+        font-size: clamp(4.5rem, 19vw, 6.25rem);
+        line-height: 0.88;
+    }
+
+    .greetingSubtitle {
+        max-width: 34rem;
+        font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+        line-height: 1.65;
     }
 
     .greetingContainer::before,
     .greetingContainer::after {
         width: 250px;
         height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .greetingContainer {
+        padding-inline: 1.25rem;
+    }
+
+    .greetingContainer h1 {
+        font-size: clamp(4.75rem, 22vw, 5.75rem);
+    }
+
+    .greetingSubtitle {
+        font-size: clamp(1.15rem, 5vw, 1.35rem);
     }
 }
