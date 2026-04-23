@@ -30,5 +30,6 @@ Project.propTypes = {
     picturePath: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    ghLink: PropTypes.string.isRequired
+    ghLink: PropTypes.string.isRequired,
+    liveLink: PropTypes.string,
 };
