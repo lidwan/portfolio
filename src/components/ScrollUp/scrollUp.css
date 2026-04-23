@@ -15,6 +15,7 @@
 .scrollUpButtonContainer.isVisible {
     max-height: 6rem;
     opacity: 1;
+    overflow: visible;
     pointer-events: auto;
     transform: translateY(0);
     margin-bottom: 3rem;
