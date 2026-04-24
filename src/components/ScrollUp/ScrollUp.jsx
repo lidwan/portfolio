@@ -1,45 +1,75 @@
-import { useEffect, useState } from 'react';
-import './scrollUp.css'
+import './scrollUp.css';
 
-const ScrollUp = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsVisible(window.scrollY > 500);
-        };
-
-        handleScroll();
-        window.addEventListener('scroll', handleScroll, { passive: true });
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    const scrollToTop = (event) => {
-        event.preventDefault();
-
-        try {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        } catch {
-            window.scrollTo(0, 0);
-        }
-    };
-
-    if (!isVisible) {
-        return null;
-    }
+const getScrollTop = () => {
+    const scrollingElement = document.scrollingElement || document.documentElement || document.body;
 
     return (
-        <div className="scrollUpButtonContainer isVisible">
-            <a
-                href="#top"
-                className="scrollTopButton"
+        window.pageYOffset ??
+        scrollingElement?.scrollTop ??
+        document.documentElement.scrollTop ??
+        document.body.scrollTop ??
+        0
+    );
+};
+
+const setScrollTop = (top) => {
+    try {
+        window.scrollTo({ top, behavior: 'auto' });
+    } catch {
+        window.scrollTo(0, top);
+    }
+
+    if (document.scrollingElement) {
+        document.scrollingElement.scrollTop = top;
+    }
+
+    document.documentElement.scrollTop = top;
+    document.body.scrollTop = top;
+};
+
+const ScrollUp = () => {
+    const scrollToTop = () => {
+        const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+        const startTop = getScrollTop();
+
+        if (startTop <= 0) {
+            return;
+        }
+
+        if (prefersReducedMotion) {
+            setScrollTop(0);
+            return;
+        }
+
+        const startTime = performance.now();
+        const duration = Math.min(700, Math.max(280, startTop * 0.2));
+
+        const step = (now) => {
+            const progress = Math.min(1, (now - startTime) / duration);
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+            setScrollTop(Math.round(startTop * (1 - easedProgress)));
+
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            }
+        };
+
+        requestAnimationFrame(step);
+    };
+
+    return (
+        <div className="pageReturnControl">
+            <button
+                type="button"
+                className="pageReturnButton"
                 onClick={scrollToTop}
+                aria-label="Scroll back to top"
             >
                 Scroll back up?
-            </a>
+            </button>
         </div>
-    )
-}
+    );
+};
 
-export default ScrollUp
+export default ScrollUp;

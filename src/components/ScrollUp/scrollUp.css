@@ -1,40 +1,38 @@
-.scrollUpButtonContainer {
+.pageReturnControl {
+    display: flex;
+    justify-content: center;
     text-align: center;
     width: 100%;
     padding: 2rem 1rem 3rem;
-    animation: scrollUpReveal 0.35s ease both;
-}
-
-.scrollUpButtonContainer.isVisible {
     opacity: 1;
+    transform: none;
 }
 
-.scrollTopButton {
-    display: inline-block;
+.pageReturnButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-appearance: none;
+    appearance: none;
     min-width: 12rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 100px;
     color: var(--text-primary);
     background: rgba(255, 255, 255, 0.08);
+    font: inherit;
     font-size: 0.95rem;
     font-weight: 500;
     padding: 0.75rem 1.5rem;
     line-height: 1.2;
-    text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.scrollTopButton:visited,
-.scrollTopButton:active {
-    color: var(--text-primary);
-}
-
-.scrollTopButton:hover,
-.scrollTopButton:focus,
-.scrollTopButton:active {
+.pageReturnButton:hover,
+.pageReturnButton:focus-visible,
+.pageReturnButton:active {
     color: #000 !important;
     background: #fff !important;
     border-color: #fff !important;
@@ -42,14 +40,7 @@
     box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
 }
 
-@keyframes scrollUpReveal {
-    from {
-        opacity: 0;
-        transform: translateY(1.25rem);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.pageReturnButton:focus-visible {
+    outline: 2px solid rgba(161, 196, 245, 0.9);
+    outline-offset: 3px;
 }
