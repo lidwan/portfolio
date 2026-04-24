@@ -4,18 +4,20 @@ import './project.css'
 
 const Project = ({picturePath, title, description, ghLink, liveLink}) => {
     return (
-        <article className="card mb-3 projectCard text-bg-dark p-1">
+        <article className="projectCard">
             <div className="row g-0">
-                <div className="col-md-4">
-                    <img src={picturePath} className="img-fluid rounded-start projectImage" alt="Project picture"/>
+                <div className="col-md-4 projectMediaColumn">
+                    <div className="projectImageWrapper">
+                        <img src={picturePath} className="img-fluid projectImage" alt="Project picture"/>
+                    </div>
                 </div>
-                <div className="col-md-8 flex-column justify-content-center align-content-center">
-                    <div className="card-body">
-                        <h5 className="card-title">{title}</h5>
-                        <div className='desContainer'><p className="card-text">{description}</p></div>
-                        <div className='buttonContainer'>
-                            <a href={ghLink}><button type="button" className="btn btn-secondary projectButton">Github Link</button> </a>
-                            {liveLink && <a href={liveLink}><button type="button" className="btn btn-secondary projectButton">Live Preview</button> </a>}
+                <div className="col-md-8 projectContentColumn">
+                    <div className="projectBody">
+                        <h5 className="projectTitle">{title}</h5>
+                        <div className="projectDescriptionWrapper"><p className="projectDescription">{description}</p></div>
+                        <div className="projectActions">
+                            <a href={ghLink} className="projectButton">Github Link</a>
+                            {liveLink && <a href={liveLink} className="projectButton">Live Preview</a>}
                         </div>
                     </div>
                 </div>
