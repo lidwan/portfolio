@@ -24,6 +24,7 @@ const Projects = () => {
                         title={project.title}
                         description={project.description}
                         ghLink={project.ghLink}
+                        ghLabel={project.ghLabel}
                         liveLink={project.liveLink}
                     />
                 </Reveal>
