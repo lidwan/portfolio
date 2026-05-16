@@ -1,14 +1,8 @@
 const projects = [
     {
-        title:"Qayemni",
-        description:"A university-scoped review platform REST API built with Spring Boot, PostgreSQL, Flyway, JWT authentication, university-email OTP verification, role-based authorization, and transactional review workflow.",
-        ghLink:"https://github.com/lidwan/Qaymeni-Spring"
-    },
-    {
-        picturePath:"https://github.com/lidwan/File-System-Analyzer/blob/main/src/main/resources/sc.png?raw=true",
-        title:"File System Analyzer",
-        description:"A multi-threaded JavaFX disk usage and duplicate-file analyzer that scans directories, surfaces large files, groups storage by file category, detects SHA-256 duplicates, and generates visual summaries and text reports.",
-        ghLink:"https://github.com/lidwan/File-System-Analyzer"
+        title:"Highly Available Recursive DNS Resolver on AWS with Analytics",
+        description:"An in-progress AWS infrastructure project focused on a highly available recursive DNS resolver using Unbound with Query analytics, reliability-first design, and cloud-native observability.",
+        status:"Currently In Progress"
     },
     {
         title:"Self-Hosted Hybrid Cloud Infrastructure Platform",

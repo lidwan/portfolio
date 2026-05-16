@@ -13,8 +13,8 @@ const About = () => {
             <Reveal delay={120}>
                 <h4 className="aboutText">
                     I’m a cat-loving, Linux enthusiast and hobby photographer, <br/>
-                    currently juggling life as a student in Jordan. <br/>
-                    I’m diving deep into Spring for backend and React for frontend. <br/>
+                    I recently took the AWS Solutions Architect - Associate (SAA), <br/>
+                    and I’m diving deep into systems management, cloud infrastructure, and AWS. <br/>
                     I also enjoy sharing tech insights on <a href="https://lsblk.dev/">my blog</a>.<br/>
                     all while managing a two-hour commute to university.
                 </h4>
