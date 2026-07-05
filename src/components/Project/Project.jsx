@@ -23,7 +23,7 @@ const Project = ({picturePath, title, description, ghLink, ghLabel = "Github Lin
                         <div className="projectActions">
                             {status && <span className="projectStatus">{status}</span>}
                             {ghLink && <a href={ghLink} className="projectButton">{ghLabel}</a>}
-                            {liveLink && <a href={liveLink} className="projectButton">Live Preview</a>}
+                            {liveLink && <a href={liveLink} className="projectButton">Visit Site</a>}
                         </div>
                     </div>
                 </div>

@@ -12,11 +12,10 @@ const About = () => {
             </Reveal>
             <Reveal delay={120}>
                 <h4 className="aboutText">
-                    I’m a cat-loving, Linux enthusiast and hobby photographer, <br/>
+                    I&#39;m a cat-loving, Linux enthusiast and hobby photographer, <br/>
                     I recently took the AWS Solutions Architect - Associate (SAA), <br/>
-                    and I’m diving deep into systems management, cloud infrastructure, and AWS. <br/>
-                    I also enjoy sharing tech insights on <a href="https://lsblk.dev/">my blog</a>.<br/>
-                    all while managing a two-hour commute to university.
+                    and I&#39;m diving deep into systems management, cloud infrastructure, and AWS. <br/>
+                    I also write about infrastructure, self-hosting, <br/> and practical tech projects on <a href="https://lsblk.dev/">my blog</a>.<br/>
                 </h4>
             </Reveal>
         </section>
