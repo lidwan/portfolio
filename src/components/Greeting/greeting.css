@@ -149,6 +149,10 @@
         padding-inline: 1.25rem;
     }
 
+    .greetingSubtitle {
+        text-align: center;
+    }
+
     .greetingContainer h1 {
         font-size: clamp(4.75rem, 22vw, 5.75rem);
     }
