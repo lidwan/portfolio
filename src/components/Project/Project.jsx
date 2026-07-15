@@ -18,7 +18,7 @@ const Project = ({picturePath, title, description, ghLink, ghLabel = "Github Lin
                 )}
                 <div className={hasPicture ? "col-md-8 projectContentColumn" : "col-12 projectContentColumn"}>
                     <div className="projectBody">
-                        <h5 className="projectTitle">{title}</h5>
+                        <h3 className="projectTitle">{title}</h3>
                         <div className="projectDescriptionWrapper"><p className="projectDescription">{description}</p></div>
                         <div className="projectActions">
                             {status && <span className="projectStatus">{status}</span>}

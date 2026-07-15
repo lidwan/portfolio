@@ -170,23 +170,28 @@
 .projectTitle {
     margin-bottom: 1rem;
     color: var(--text-primary);
-    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-    font-weight: 700;
-    letter-spacing: 0;
+    font-size: var(--type-xl);
+    font-weight: 650;
+    line-height: var(--leading-heading);
+    letter-spacing: -0.035em;
+    text-wrap: balance;
 }
 
 .projectCardNoMedia .projectTitle {
     width: 100%;
     max-width: 760px;
     margin-inline: auto;
-    font-size: clamp(1.65rem, 3vw, 2.15rem);
+    font-size: var(--type-2xl);
 }
 
 .projectDescription {
     margin-bottom: 2rem;
     color: rgba(237, 237, 237, 0.68);
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: var(--type-base);
+    font-weight: 450;
+    letter-spacing: -0.008em;
+    line-height: 1.72;
+    text-wrap: pretty;
 }
 
 .projectActions {
@@ -207,8 +212,8 @@
     color: var(--text-primary);
     background: rgba(255, 255, 255, 0.055);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: var(--type-sm);
+    font-weight: 650;
     line-height: 1;
     text-decoration: none;
     transition:
@@ -229,8 +234,8 @@
     padding: 0.58rem 1.35rem;
     color: var(--text-primary);
     background: rgba(161, 196, 245, 0.08);
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: var(--type-sm);
+    font-weight: 650;
     line-height: 1;
 }
 

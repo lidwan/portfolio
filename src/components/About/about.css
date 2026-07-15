@@ -1,7 +1,8 @@
 .AboutLI {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-size: var(--type-section);
+    font-weight: 700;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
     margin-bottom: 2rem;
     display: inline-block;
     background: linear-gradient(135deg, #fff 0%, #a1a1a1 100%);
@@ -20,7 +21,8 @@
 }
 
 .aboutText {
-    max-width: 850px;
+    max-width: var(--measure);
+    margin: 0;
     padding: 3rem 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 24px;
@@ -30,6 +32,13 @@
     position: relative;
     overflow: hidden;
     will-change: transform;
+    color: rgba(237, 237, 237, 0.72);
+    font-size: var(--type-lg);
+    font-weight: 450;
+    letter-spacing: -0.012em;
+    line-height: 1.75;
+    text-align: left;
+    text-wrap: pretty;
 }
 
 .aboutText::before {

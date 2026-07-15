@@ -9,7 +9,7 @@ const Projects = () => {
         <section className="centerContainer projectsContainer">
             <div id="projects">&nbsp;</div>
             <Reveal>
-                <h1 className="projectsH1">Projects</h1>
+                <h2 className="projectsH1">Projects</h2>
             </Reveal>
             {projects.map((project, index) => (
                 <Reveal

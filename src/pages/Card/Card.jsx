@@ -58,7 +58,7 @@ const Card = () => {
                 <section className="wholePageSection centerContainer cardContainer">
                     <div className="contactCard">
                         <div className="cardHeader">
-                            <h2>Loay Idwan</h2>
+                            <h1>Loay Idwan</h1>
                         </div>
 
                         <div className="cardLinks">

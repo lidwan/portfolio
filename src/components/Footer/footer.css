@@ -5,9 +5,10 @@
     color: var(--text-muted);
     padding: 2rem 1rem 3rem;
     margin: 0;
-    font-size: 0.95rem;
-    font-weight: 400;
-    letter-spacing: 0.02em;
+    font-size: var(--type-sm);
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    line-height: 1.5;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     background: transparent;
 }

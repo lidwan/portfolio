@@ -28,11 +28,12 @@
     gap: 0.5rem;
 }
 
-.cardHeader h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
+.cardHeader h1 {
+    font-size: var(--type-2xl);
+    font-weight: 650;
+    line-height: var(--leading-heading);
     margin: 0;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.04em;
     background: linear-gradient(135deg, #ffffff 0%, #a1a1a1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,16 +90,19 @@
 
 .linkTitle {
     color: var(--text-muted);
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-family: var(--font-display);
+    font-size: var(--type-xs);
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
 }
 
 .linkValue {
     color: var(--text-primary);
-    font-size: 1.05rem;
-    font-weight: 500;
+    font-size: var(--type-base);
+    font-weight: 550;
+    letter-spacing: -0.012em;
+    font-variant-numeric: tabular-nums;
 }
 
 @media screen and (max-width: 480px) {

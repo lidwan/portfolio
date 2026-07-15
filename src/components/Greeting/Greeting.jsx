@@ -17,8 +17,8 @@ const Greeting = () => {
         <section className="greetingContainer wholePageSection" aria-labelledby="greeting-title">
             <h1 id="greeting-title">Loay<br/>
                 Idwan.</h1>
-            <h2 className="greetingSubtitle">I&#39;m a CIS graduate from <a href="https://just.edu.jo/">JUST</a>, focused on cloud infrastructure, Linux systems, networking, and DevOps. Explore <a href="#projects">my projects</a> and <a href="https://lsblk.dev/">my tech blog</a>.
-            </h2>
+            <p className="greetingSubtitle">I&#39;m a CIS graduate from <a href="https://just.edu.jo/">JUST</a>, focused on cloud infrastructure, Linux systems, networking, and DevOps. Explore <a href="#projects">my projects</a> and <a href="https://lsblk.dev/">my tech blog</a>.
+            </p>
 
             <div className="greetingTicker">
                 <span className="visually-hidden">Technical focus: {focusAreas.join(', ')}</span>

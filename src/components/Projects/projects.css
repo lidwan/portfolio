@@ -7,13 +7,14 @@
 }
 
 .projectsH1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 800;
+    font-size: var(--type-section);
+    font-weight: 700;
+    line-height: var(--leading-tight);
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #fff 0%, #a1a1a1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: -0.02em;
+    letter-spacing: var(--tracking-tight);
 }
 
 #projects {

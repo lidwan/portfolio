@@ -42,7 +42,7 @@ const Contact = () => {
 
         <section className="wholePageSection centerContainer contactContainer">
             <Reveal>
-                <h1 className="getInTouch" id="contact">Get in touch</h1>
+                <h2 className="getInTouch" id="contact">Get in touch</h2>
             </Reveal>
             <Reveal delay={120}>
                 <a href="mailto:info@loayidwan.com" className="contactEmail">

@@ -11,7 +11,7 @@ const NotFound = () => {
                     <div className="centerContainer notFoundCard glass-panel">
                         <p className="notFoundEyebrow">404</p>
                         <h1>Page not found</h1>
-                        <h3>The page you requested does not exist on this site.</h3>
+                        <p className="notFoundDescription">The page you requested does not exist on this site.</p>
                         <a className="notFoundLink" href="/">
                             Return to the homepage
                         </a>

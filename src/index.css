@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap');
-
 :root {
+  --font-body: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Manrope', system-ui, sans-serif;
+  --type-xs: clamp(0.72rem, 0.7rem + 0.08vw, 0.78rem);
+  --type-sm: clamp(0.84rem, 0.81rem + 0.12vw, 0.91rem);
+  --type-base: clamp(1rem, 0.97rem + 0.14vw, 1.08rem);
+  --type-lg: clamp(1.12rem, 1.05rem + 0.3vw, 1.3rem);
+  --type-xl: clamp(1.45rem, 1.3rem + 0.62vw, 1.82rem);
+  --type-2xl: clamp(1.8rem, 1.55rem + 1vw, 2.4rem);
+  --type-section: clamp(2.75rem, 2.15rem + 2.45vw, 4.25rem);
+  --leading-tight: 0.98;
+  --leading-heading: 1.12;
+  --leading-body: 1.7;
+  --tracking-tight: -0.045em;
+  --measure: 65ch;
+  --measure-compact: 48ch;
   --page-bg: #050505;
   --text-primary: #ededed;
   --text-muted: #888888;
@@ -38,15 +51,16 @@ body {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body);
   background-color: var(--page-bg);
   background-image:
     radial-gradient(circle at 15% 50%, rgba(94, 106, 210, 0.05) 0%, rgba(94, 106, 210, 0.03) 28%, rgba(94, 106, 210, 0) 52%),
     radial-gradient(circle at 85% 30%, rgba(131, 56, 236, 0.05) 0%, rgba(131, 56, 236, 0.03) 28%, rgba(131, 56, 236, 0) 52%);
   background-repeat: no-repeat;
   color: var(--text-primary);
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: var(--type-base);
+  font-optical-sizing: auto;
+  line-height: var(--leading-body);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -58,7 +72,23 @@ h4,
 h5,
 h6,
 .brand-font {
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 650;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-heading);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 a,
@@ -112,25 +142,15 @@ ul {
 }
 
 .centerContainer h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-size: var(--type-section);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
   margin: 0;
-  line-height: 1.1;
+  line-height: var(--leading-tight);
   background: linear-gradient(135deg, #ffffff 0%, #a1a1a1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.centerContainer h3,
-.centerContainer h4 {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: clamp(1.1rem, 2vw, 1.25rem);
-  line-height: 1.7;
-  font-weight: 400;
-  max-width: 800px;
 }
 
 /* Glassmorphism Utilities */
