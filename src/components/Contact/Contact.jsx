@@ -45,7 +45,15 @@ const Contact = () => {
                 <h1 className="getInTouch" id="contact">Get in touch</h1>
             </Reveal>
             <Reveal delay={120}>
-                <h3 className="contactEmail">Email: <a href="mailto:info@loayidwan.com" className="link">info@loayidwan.com</a></h3>
+                <a href="mailto:info@loayidwan.com" className="contactEmail">
+                    <span>
+                        <span className="contactEmailLabel">Email me</span>
+                        <span className="contactEmailAddress">info@loayidwan.com</span>
+                    </span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </a>
             </Reveal>
             <Reveal delay={220}>
                 <span className="iconsConstainer">

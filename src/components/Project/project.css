@@ -33,7 +33,9 @@
     z-index: 0;
     background:
         linear-gradient(120deg, rgba(161, 196, 245, 0.13), transparent 32%, rgba(94, 106, 210, 0.1) 72%, rgba(131, 56, 236, 0.12));
+    background-size: 175% 175%;
     opacity: 0.72;
+    animation: projectReflection 16s ease-in-out infinite alternate;
 }
 
 .projectCard::after {
@@ -73,6 +75,16 @@
 
 .projectCard:hover::after {
     opacity: 0.68;
+}
+
+@keyframes projectReflection {
+    from {
+        background-position: 0% 25%;
+    }
+
+    to {
+        background-position: 100% 75%;
+    }
 }
 
 .projectCardNoMedia {
