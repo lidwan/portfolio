@@ -1,6 +1,6 @@
 :root {
-  --font-body: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Space Grotesk', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Instrument Sans', system-ui, sans-serif;
   --type-xs: clamp(0.72rem, 0.7rem + 0.08vw, 0.78rem);
   --type-sm: clamp(0.84rem, 0.81rem + 0.12vw, 0.91rem);
   --type-base: clamp(1rem, 0.97rem + 0.14vw, 1.08rem);
@@ -11,7 +11,7 @@
   --leading-tight: 0.98;
   --leading-heading: 1.12;
   --leading-body: 1.7;
-  --tracking-tight: -0.045em;
+  --tracking-tight: -0.055em;
   --measure: 65ch;
   --measure-compact: 48ch;
   --page-bg: #050505;
@@ -74,7 +74,8 @@ h6,
 .brand-font {
   font-family: var(--font-display);
   font-optical-sizing: auto;
-  font-weight: 650;
+  font-weight: 600;
+  font-variation-settings: 'opsz' 72, 'wdth' 92;
   letter-spacing: var(--tracking-tight);
   line-height: var(--leading-heading);
   text-wrap: balance;

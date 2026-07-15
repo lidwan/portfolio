@@ -40,9 +40,9 @@
 
 .greetingContainer h1 {
     font-size: clamp(4.75rem, 11vw, 8.5rem);
-    font-weight: 700;
+    font-weight: 650;
     line-height: 0.86;
-    letter-spacing: -0.065em;
+    letter-spacing: -0.075em;
     margin: 0;
     background:
         linear-gradient(118deg, #ffffff 0%, #f4f5f8 35%, #a1c4f5 57%, #ffffff 74%, #9698a6 100%);
@@ -73,6 +73,7 @@
     line-height: 1.68;
     font-weight: 450;
     letter-spacing: -0.012em;
+    text-align: center;
     text-wrap: pretty;
     opacity: 0;
     animation: slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
@@ -202,10 +203,6 @@
 @media screen and (max-width: 480px) {
     .greetingContainer {
         padding-inline: 1.25rem;
-    }
-
-    .greetingSubtitle {
-        text-align: center;
     }
 
     .greetingContainer h1 {
