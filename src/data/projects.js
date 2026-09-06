@@ -7,14 +7,14 @@ const projects = [
         liveLink:"https://www.makanakjo.com",
     },
     {
-        title:"Highly Available Recursive DNS Resolver on AWS with Analytics",
-        description:"An AWS infrastructure project focused on a highly available recursive DNS resolver using Unbound with Query analytics, reliability-first design, and cloud-native observability.",
+        title:"Highly Available Recursive DNS Resolver on AWS with Terraform",
+        description:"A Terraform-managed AWS infrastructure project that provisions a highly available recursive DNS resolver with Unbound, an EC2 Auto Scaling Group, an internet-facing Network Load Balancer, and CloudWatch Logs Insights analytics. It deploys three Amazon Linux 2023 resolver instances across three Availability Zones, supports UDP and TCP DNS on port 53, and centralizes query logs for observability.",
         ghLink:"https://lsblk.dev/posts/building-a-highly-available-dns-resolver-on-aws-with-unbound-auto-scaling-nlb-and-cloudwatch",
         ghLabel:"Read Blog Post"
     },
     {
         title:"Self-Hosted Hybrid Cloud Infrastructure Platform",
-        description:"A personal hybrid cloud across a Linux home server and cloud VPS, running 15+ containerized services with Docker, Caddy, Cloudflare DNS, NetBird zero-trust networking, private SSH access, and cross-node monitoring.",
+        description:"Built and maintain a hybrid Linux infrastructure spanning Proxmox VE, Ubuntu VMs, LXC containers, and OCI VPS instances, running 25+ containerized services across on-premises and cloud environments. Designed and operate semi-public DNS and CalDAV/CardDAV services using AdGuard Home, DNS-over-TLS, Cloudflare Tunnel, client-specific access controls, geographic filtering, and administrative access restricted to a self-hosted NetBird zero-trust network. Connected home and cloud infrastructure through NetBird using private subnet routing, exit nodes, access policies, and overlay-only SSH, while administering Linux hosts, virtualization, containers, DNS, networking, storage, and service troubleshooting across the environment.",
         ghLink:"https://lsblk.dev/posts/self-hosting-the-subscription-detox-i-didnt-know-i-needed",
         ghLabel:"Read Blog Post"
     }
