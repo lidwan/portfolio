@@ -14,7 +14,7 @@ const projects = [
     },
     {
         title:"Self-Hosted Hybrid Cloud Infrastructure Platform",
-        description:"Built and maintain a hybrid Linux infrastructure spanning Proxmox VE, Ubuntu VMs, LXC containers, and OCI VPS instances, running 25+ containerized services across on-premises and cloud environments. Designed and operate semi-public DNS and CalDAV/CardDAV services using AdGuard Home, DNS-over-TLS, Cloudflare Tunnel, client-specific access controls, geographic filtering, and administrative access restricted to a self-hosted NetBird zero-trust network. Connected home and cloud infrastructure through NetBird using private subnet routing, exit nodes, access policies, and overlay-only SSH, while administering Linux hosts, virtualization, containers, DNS, networking, storage, and service troubleshooting across the environment.",
+        description:"A self-hosted hybrid cloud platform built across Proxmox VE, Ubuntu VMs, LXC containers, and OCI VPS instances, running 25+ containerized services between home and cloud environments. It combines AdGuard Home, DNS-over-TLS, Cloudflare Tunnel, CalDAV/CardDAV, client-specific access controls, geographic filtering, and NetBird-restricted administration, with private subnet routing, exit nodes, access policies, and overlay-only SSH connecting the infrastructure. The platform also serves as a practical lab for Linux administration, virtualization, container operations, DNS, networking, storage, and service troubleshooting.",
         ghLink:"https://lsblk.dev/posts/self-hosting-the-subscription-detox-i-didnt-know-i-needed",
         ghLabel:"Read Blog Post"
     }
